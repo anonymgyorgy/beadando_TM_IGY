@@ -1,0 +1,19 @@
+c:\users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\bin\Debug\kpollo.exe.config
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\bin\Debug\kpollo.exe
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\bin\Debug\kpollo.pdb
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\MainWindow.g.cs
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\Pass.g.cs
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\App.g.cs
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo_MarkupCompile.cache
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo_MarkupCompile.lref
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\MainWindow.baml
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\Pass.baml
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo.g.resources
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo.Properties.Resources.resources
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo.csproj.GenerateResource.Cache
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo.exe
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo.pdb
+C:\Users\tothm\documents\visual studio 2015\Projects\kpollo\kpollo\obj\Debug\kpollo.csprojResolveAssemblyReference.cache
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\bin\Debug\kpollo.exe.config
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.exe
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.pdb
