@@ -5,16 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kpollo"
         mc:Ignorable="d"
-        Title="Kő Papír Olló" Height="650" Width="900">
+        Title="Game" Height="650" Width="900">
     <Grid x:Name="Grid">
-        <Image x:Name="image" HorizontalAlignment="Left" Height="250" Margin="0,420,0,0" VerticalAlignment="Top" Width="250" Source="ko.png" MouseDown="image_MouseDown"/>
-        <Image x:Name="image2" HorizontalAlignment="Left" Height="250" Margin="250,400,0,0" VerticalAlignment="Top" Width="250" Source="paper.png" MouseDown="image_Copy_MouseDown"/>
-        <Image x:Name="image3" HorizontalAlignment="Left" Height="250" Margin="500,400,0,0" VerticalAlignment="Top" Width="250" Source="ollo.png" MouseDown="image3_MouseDown"/>
         <Button x:Name="button" Content="Vége" HorizontalAlignment="Left" Height="90" Margin="750,525,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
-        <Image x:Name="valasztas" HorizontalAlignment="Left" Height="250" Margin="100,100,0,0" VerticalAlignment="Top" Width="250"/>
-        <Image x:Name="gepkep" HorizontalAlignment="Left" Height="250" Margin="400,100,0,0" VerticalAlignment="Top" Width="250"/>
-        <TextBlock x:Name="tballas" HorizontalAlignment="Left" Height="56" Margin="600,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88"/>
-        <TextBlock x:Name="tballas2" HorizontalAlignment="Left" Height="56" Margin="710,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88"/>
+        <TextBlock x:Name="ora" HorizontalAlignment="Left" Height="56" Margin="600,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="{Binding Sec}"/>
+        
 
     </Grid>
 </Window>

@@ -9,7 +9,6 @@ namespace kpollo
    
    public class User
     {
-        public int lose=0;
         public int score=0;
         string pass;
         string name;
