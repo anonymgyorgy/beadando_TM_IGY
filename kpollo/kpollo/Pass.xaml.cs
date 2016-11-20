@@ -53,5 +53,12 @@ namespace kpollo
                 }
             }
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Toplista tl = new Toplista();
+            tl.ShowDialog();
+            this.Close();
+        }
     }
 }

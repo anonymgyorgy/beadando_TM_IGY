@@ -30,3 +30,5 @@ C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Pass.baml
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.g.resources
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.Properties.Resources.resources
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.csproj.GenerateResource.Cache
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Toplista.g.cs
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Toplista.baml

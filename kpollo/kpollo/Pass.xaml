@@ -12,7 +12,7 @@
         <Button x:Name="button" Content="Regisztráció" HorizontalAlignment="Left" Height="50" Margin="205,31,0,0" VerticalAlignment="Top" Width="130" Click="button_Click"/>
         <Button x:Name="button1" Content="Belépés" HorizontalAlignment="Left" Height="50" Margin="201,109,0,0" VerticalAlignment="Top" Width="145" Click="button1_Click"/>
         <Label x:Name="label" Content="Regisztráció/Belépés" HorizontalAlignment="Left" Height="31" Margin="17,14,0,0" VerticalAlignment="Top" Width="143"/>
-        <Button x:Name="button2" Content="Toplista" HorizontalAlignment="Left" Height="45" Margin="203,183,0,0" VerticalAlignment="Top" Width="144"/>
+        <Button x:Name="button2" Content="Toplista" HorizontalAlignment="Left" Height="45" Margin="203,183,0,0" VerticalAlignment="Top" Width="144" Click="button2_Click"/>
 
     </Grid>
 </Window>

@@ -57,6 +57,9 @@
     </ApplicationDefinition>
     <Compile Include="Game.cs" />
     <Compile Include="Prog.cs" />
+    <Compile Include="Toplista.xaml.cs">
+      <DependentUpon>Toplista.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -71,6 +74,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toplista.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
