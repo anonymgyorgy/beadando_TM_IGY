@@ -39,7 +39,8 @@ namespace kpollo
 
         }
         int sec;
-
+        int ybeka=300;
+        int xbeka = 100;
         public int Sec
         {
             get { return sec; }
@@ -54,6 +55,11 @@ namespace kpollo
         private void t_Tick(object sender, EventArgs e)
         {
             Sec++;
+            if (ybeka < 350)
+            {
+                ybeka = ybeka + 10;
+                Canvas.SetTop(image, ybeka);
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -66,7 +72,29 @@ namespace kpollo
             pr.ulist()[Prog.jatekos].Score = sec;
                       
         }
-      
-       
+
+        private void Cv_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Left)
+            {
+                xbeka -= 10;
+                Canvas.SetLeft(image, xbeka);
+            }
+            if (e.Key == Key.Down)
+            {
+                ybeka += 10;
+                Canvas.SetTop(image, ybeka);
+            }
+            if (e.Key == Key.Up)
+            {
+                ybeka -= 50;
+                Canvas.SetTop(image, ybeka);
+            }
+            if (e.Key == Key.Right)
+            {
+                xbeka += 10;
+                Canvas.SetLeft(image, xbeka);
+            }
+        }
     }
 }

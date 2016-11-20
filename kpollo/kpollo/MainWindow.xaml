@@ -6,10 +6,35 @@
         xmlns:local="clr-namespace:kpollo"
         mc:Ignorable="d"
         Title="Game" Height="650" Width="900">
-    <Grid x:Name="Grid">
-        <Button x:Name="button" Content="Vége" HorizontalAlignment="Left" Height="90" Margin="750,525,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
+    <Canvas x:Name="Cv" KeyDown="Cv_KeyDown" RenderTransformOrigin="0.552,0.577">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0,4" StartPoint="0,0">
+                <LinearGradientBrush.Transform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.Transform>
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="White"/>
+                <GradientStop Color="#FFFFA700" Offset="0.5"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
         <TextBlock x:Name="ora" HorizontalAlignment="Left" Height="56" Margin="600,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="{Binding Sec}"/>
-        
+        <Image x:Name="image" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="185" Source="beka.jpg" Canvas.Left="86" Canvas.Top="300"/>
+        <TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="161" Canvas.Left="20" Canvas.Top="548"/>
+        <Button x:Name="button" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="button_Click" Canvas.Left="726" Canvas.Top="552"/>
 
-    </Grid>
+
+    </Canvas>
 </Window>
