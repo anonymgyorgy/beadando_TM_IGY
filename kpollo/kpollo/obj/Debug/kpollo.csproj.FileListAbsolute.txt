@@ -19,7 +19,6 @@ C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.exe
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.pdb
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\bin\Debug\kpollo.exe
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\bin\Debug\kpollo.pdb
-C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.csprojResolveAssemblyReference.cache
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\MainWindow.g.cs
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Pass.g.cs
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\App.g.cs

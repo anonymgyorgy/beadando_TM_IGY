@@ -24,7 +24,10 @@ namespace kpollo
 
         public Pass()
         {
+           
+
             InitializeComponent();
+            
         }
 
         public TextBlock tb = new TextBlock();
@@ -57,9 +60,14 @@ namespace kpollo
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            /// deszerializáció
+            Prog pr = new Prog();
+            pr.Beolvas();
+
             Toplista tl = new Toplista();
             tl.ShowDialog();
             this.Close();
+          
         }
     }
 }

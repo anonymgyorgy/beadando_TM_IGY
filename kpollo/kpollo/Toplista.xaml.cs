@@ -19,11 +19,26 @@ namespace kpollo
     /// </summary>
     public partial class Toplista : Window
     {
+        
+        public List<User> vmi;
+        public List<User> rendez()
+        {
+            vmi = (from p in Prog.Users
+                   orderby p.Score descending
+                   select p).ToList();
+            return vmi;
+        }
+
         public Toplista()
         {
             InitializeComponent();
-            this.listBox.ItemsSource = Prog.Users;
+            this.listBox.ItemsSource = rendez();
+
         }
+
+
+
+           
 
         private void Vissza_Click(object sender, RoutedEventArgs e)
         {

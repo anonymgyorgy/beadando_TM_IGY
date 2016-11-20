@@ -22,9 +22,9 @@ namespace kpollo
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window , INotifyPropertyChanged
-    {   
+    {
         Prog pr = new Prog();
-        Random r = new Random();
+       
         public MainWindow()
         {
             DispatcherTimer t;
@@ -52,6 +52,20 @@ namespace kpollo
                     pc(this, new PropertyChangedEventArgs("Sec"));
             }
         }
+
+        internal Prog Pr
+        {
+            get
+            {
+                return pr;
+            }
+
+            set
+            {
+                pr = value;
+            }
+        }
+
         private void t_Tick(object sender, EventArgs e)
         {
             Sec++;
@@ -69,7 +83,7 @@ namespace kpollo
             Pass p = new Pass();
             p.Show();
             this.Close();
-            pr.ulist()[Prog.jatekos].Score = sec;
+            Pr.ulist()[Prog.jatekos].Score = sec;
                       
         }
 
