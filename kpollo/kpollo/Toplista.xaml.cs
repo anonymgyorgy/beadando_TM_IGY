@@ -30,6 +30,7 @@ namespace kpollo
             Pass p = new Pass();
             p.Show();
             this.Close();
+            
         }
     }
 }

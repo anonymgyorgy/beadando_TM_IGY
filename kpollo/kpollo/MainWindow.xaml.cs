@@ -62,7 +62,9 @@ namespace kpollo
         {
             Pass p = new Pass();
             p.Show();
-            this.Close();            
+            this.Close();
+            pr.ulist()[Prog.jatekos].Score = sec;
+                      
         }
       
        

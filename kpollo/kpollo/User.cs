@@ -9,6 +9,7 @@ namespace kpollo
    
    public class User
     {
+        
         public int score=0;
         string pass;
         string name;
@@ -57,6 +58,10 @@ namespace kpollo
             {
                 score = value;
             }
+        }
+        public override string ToString()
+        {
+            return "Person: " + Name + " " + Score;
         }
     }
 }

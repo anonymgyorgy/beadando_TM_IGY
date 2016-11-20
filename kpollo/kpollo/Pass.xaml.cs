@@ -31,6 +31,7 @@ namespace kpollo
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            
             User u = new User(tbnev.Text, tbjel.Text);
             Prog.Users.Add(u);
                 
