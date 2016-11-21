@@ -26,14 +26,20 @@
                     </TransformGroup>
                 </LinearGradientBrush.RelativeTransform>
                 <GradientStop Color="White"/>
-                <GradientStop Color="#FFFFA700" Offset="0.5"/>
+                <GradientStop Color="#1111A700" Offset="0.5"/>
             </LinearGradientBrush>
+            
         </Canvas.Background>
+        
         <TextBlock x:Name="ora" HorizontalAlignment="Left" Height="56" Margin="600,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="{Binding Sec}"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="185" Source="beka.jpg" Canvas.Left="86" Canvas.Top="300"/>
-        <TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>
-        <Button x:Name="button1" Content="Mehet" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="161" Canvas.Left="20" Canvas.Top="548"/>
-        <Button x:Name="button" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="button_Click" Canvas.Left="726" Canvas.Top="552"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="135" Source="beka.jpg" Canvas.Left="86" Canvas.Top="300"/>
+        <Image x:Name="imageground" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="480" Source="ground.jpg" Canvas.Left="86" Canvas.Top="300"/>
+        
+       <!--<TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>-->
+        
+                <Button x:Name="buttonMehet" Content="Mehet" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="161"  Canvas.Left="20" Canvas.Top="548"/>
+        <Button x:Name="Probagomb" Content = "Proba" HorizontalAlignment="Center" Height="21" VerticalAlignment="Top" Width = "111" Canvas.Left ="21" Canvas.Top="444"/>
+        <Button x:Name="buttonVege" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="buttonVege_Click" Canvas.Left="726" Canvas.Top="552"/>
 
 
     </Canvas>
