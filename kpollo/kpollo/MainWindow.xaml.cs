@@ -23,8 +23,9 @@ namespace kpollo
     /// </summary>
     public partial class MainWindow : Window , INotifyPropertyChanged
     {
-        Prog pr = new Prog();
-       
+        Toplista tl = new Toplista();
+        
+        
         public MainWindow()
         {
             DispatcherTimer t;
@@ -38,7 +39,7 @@ namespace kpollo
             this.ora.DataContext = this;
 
         }
-        int sec;
+        int sec=0;
         int ybeka=300;
         int xbeka = 100;
         public int Sec
@@ -53,18 +54,7 @@ namespace kpollo
             }
         }
 
-        internal Prog Pr
-        {
-            get
-            {
-                return pr;
-            }
-
-            set
-            {
-                pr = value;
-            }
-        }
+        
 
         private void t_Tick(object sender, EventArgs e)
         {
@@ -80,10 +70,12 @@ namespace kpollo
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Pass p = new Pass();
-            p.Show();
+            
+            tl.p.Pr.Users[Prog.jatekos].Score = Sec;
+            tl.p.Show();
             this.Close();
-            Pr.ulist()[Prog.jatekos].Score = sec;
+            
+         
                       
         }
 

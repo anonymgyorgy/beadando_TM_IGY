@@ -1,57 +1,66 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using System.IO;
 
 namespace kpollo
 {
-   
+
+
     /// <summary>
     /// Interaction logic for Pass.xaml
     /// </summary>
     public partial class Pass : Window
     {
-      
+        
+        private Prog pr = new Prog();
 
         public Pass()
         {
-           
-
-            InitializeComponent();
             
+            InitializeComponent();
+            /// deszerializáció
+          
+           pr.Beolvas();
         }
 
         public TextBlock tb = new TextBlock();
+
+        internal Prog Pr
+        {
+            get
+            {
+                return pr;
+            }
+
+            set
+            {
+                pr = value;
+            }
+        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
             User u = new User(tbnev.Text, tbjel.Text);
-            Prog.Users.Add(u);
+            Pr.Users.Add(u);
                 
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < Prog.Users.Count; i++)
+            for (int i = 0; i < Pr.Users.Count; i++)
             {
-                if (Prog.Users[i].Name == tbnev.Text && Prog.Users[i].Pass == tbjel.Text)
+                if (Pr.Users[i].Name == tbnev.Text && Pr.Users[i].Pass == tbjel.Text)
                 {
-                    MainWindow m = new MainWindow();
-                    Prog.jatekos = i;
-                    m.ShowDialog();
-                    this.Close();
+                   
+                   Prog.jatekos = i;
+                   MainWindow m = new MainWindow();
+                   m.ShowDialog();
+                   this.Close();
                 }
-                if(i == Prog.Users.Count-1 && (Prog.Users[i].Name != tbnev.Text || Prog.Users[i].Pass != tbjel.Text))
+                if(i == Pr.Users.Count-1 && (Pr.Users[i].Name != tbnev.Text || Pr.Users[i].Pass != tbjel.Text))
                 {
                     MessageBox.Show("Hibás Felhasználónév vagy jelszó");
                 }
@@ -60,13 +69,10 @@ namespace kpollo
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            /// deszerializáció
-            Prog pr = new Prog();
-            pr.Beolvas();
-
+            
             Toplista tl = new Toplista();
             tl.ShowDialog();
-            this.Close();
+            
           
         }
     }

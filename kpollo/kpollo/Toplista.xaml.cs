@@ -19,13 +19,16 @@ namespace kpollo
     /// </summary>
     public partial class Toplista : Window
     {
+        public Pass p ;
         
+
         public List<User> vmi;
         public List<User> rendez()
         {
-            vmi = (from p in Prog.Users
-                   orderby p.Score descending
-                   select p).ToList();
+           p = new Pass();
+        vmi = (from a in p.Pr.Users
+                   orderby a.Score descending
+                   select a).ToList();
             return vmi;
         }
 
@@ -33,6 +36,7 @@ namespace kpollo
         {
             InitializeComponent();
             this.listBox.ItemsSource = rendez();
+            
 
         }
 
@@ -42,8 +46,8 @@ namespace kpollo
 
         private void Vissza_Click(object sender, RoutedEventArgs e)
         {
-            Pass p = new Pass();
-            p.Show();
+           
+            
             this.Close();
             
         }
