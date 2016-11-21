@@ -11,6 +11,7 @@ namespace kpollo
     class Prog
     {
         
+        
         private static List<User> users = new List<User>();
 
         public void Beolvas()

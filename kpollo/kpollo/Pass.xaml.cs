@@ -11,7 +11,7 @@ namespace kpollo
     /// </summary>
     public partial class Pass : Window
     {
-        
+
         private Prog pr = new Prog();
 
         public Pass()
@@ -38,6 +38,8 @@ namespace kpollo
             }
         }
 
+        
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
@@ -57,7 +59,7 @@ namespace kpollo
                    Prog.jatekos = i;
                    MainWindow m = new MainWindow();
                    m.ShowDialog();
-                   this.Close();
+                   
                 }
                 /// Ha nincs ilyen felhasználó
                 if (i == Pr.Users.Count-1 && (Pr.Users[i].Name != tbnev.Text || Pr.Users[i].Pass != tbjel.Text))
@@ -69,8 +71,8 @@ namespace kpollo
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-                       
-           Pr.tl.ShowDialog();
+            Toplista tl = new Toplista();
+           tl.ShowDialog();
             
           
         }
