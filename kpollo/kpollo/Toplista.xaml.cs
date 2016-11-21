@@ -19,14 +19,14 @@ namespace kpollo
     /// </summary>
     public partial class Toplista : Window
     {
-        public Pass p ;
+        
         
 
         public List<User> vmi;
         public List<User> rendez()
         {
-           p = new Pass();
-        vmi = (from a in p.Pr.Users
+          
+        vmi = (from a in Prog.ulist()
                    orderby a.Score descending
                    select a).ToList();
             return vmi;
