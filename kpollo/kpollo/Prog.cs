@@ -10,6 +10,7 @@ namespace kpollo
 {
     class Prog
     {
+        
         private static List<User> users = new List<User>();
 
         public void Beolvas()
@@ -29,7 +30,8 @@ namespace kpollo
 
         }
 
-       
+        static public List<User> ulist()
+        { return users; }
         public  List<User> Users
         {
             get
@@ -43,7 +45,7 @@ namespace kpollo
             }
         }
         public static int jatekos = 0;
-
+        
     }
    
 }

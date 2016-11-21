@@ -6,8 +6,6 @@ using System.IO;
 
 namespace kpollo
 {
-
-
     /// <summary>
     /// Interaction logic for Pass.xaml
     /// </summary>
@@ -50,6 +48,7 @@ namespace kpollo
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+            /// felhasználó keresése
             for (int i = 0; i < Pr.Users.Count; i++)
             {
                 if (Pr.Users[i].Name == tbnev.Text && Pr.Users[i].Pass == tbjel.Text)
@@ -60,7 +59,8 @@ namespace kpollo
                    m.ShowDialog();
                    this.Close();
                 }
-                if(i == Pr.Users.Count-1 && (Pr.Users[i].Name != tbnev.Text || Pr.Users[i].Pass != tbjel.Text))
+                /// Ha nincs ilyen felhasználó
+                if (i == Pr.Users.Count-1 && (Pr.Users[i].Name != tbnev.Text || Pr.Users[i].Pass != tbjel.Text))
                 {
                     MessageBox.Show("Hibás Felhasználónév vagy jelszó");
                 }
@@ -69,9 +69,8 @@ namespace kpollo
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            
-            Toplista tl = new Toplista();
-            tl.ShowDialog();
+                       
+           Pr.tl.ShowDialog();
             
           
         }

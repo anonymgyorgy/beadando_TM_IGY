@@ -23,7 +23,7 @@ namespace kpollo
     /// </summary>
     public partial class MainWindow : Window , INotifyPropertyChanged
     {
-        Toplista tl = new Toplista();
+        
         
         
         public MainWindow()
@@ -71,8 +71,8 @@ namespace kpollo
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-            tl.p.Pr.Users[Prog.jatekos].Score = Sec;
-            tl.p.Show();
+            Prog.ulist()[Prog.jatekos].Score = Sec;
+           
             this.Close();
             
          
