@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using System.IO;
+using System.Xml.Serialization;
 
 namespace kpollo
 {
@@ -16,7 +17,14 @@ namespace kpollo
 
         public void Beolvas()
         {
-            StreamReader be = new StreamReader("users.txt", Encoding.UTF7);
+            
+            FileStream fs = new FileStream("userialization.xml", FileMode.Open);
+            XmlSerializer xs = new XmlSerializer(typeof(User));
+            List<User> deser = (List<User>)xs.Deserialize(fs);
+
+
+
+            /*StreamReader be = new StreamReader("users.txt", Encoding.UTF7);
             while (!be.EndOfStream)
             {
                 string nev = be.ReadLine();
@@ -27,10 +35,19 @@ namespace kpollo
             users.Add(u);
 
             }
-            be.Close();
+            be.Close();*/
 
         }
+        public void Serialize()
+        {
+            FileStream fs = new FileStream("userialization.xml", FileMode.Create);
+            XmlSerializer xs = new XmlSerializer(typeof(User));
+            for (int i = 0; i < users.Count; i++)
+            {               
+                xs.Serialize(fs, users[i]);
+            }
 
+        }
         static public List<User> ulist()
         { return users; }
         public  List<User> Users

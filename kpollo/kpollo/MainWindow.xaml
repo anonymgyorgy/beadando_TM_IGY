@@ -5,16 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kpollo"
         mc:Ignorable="d"
-        Title="Game" Height="650" Width="900">
+        Title="Game" Height="650" Width="900" KeyDown="Cv_KeyDown">
     <Window.Resources>
         <Storyboard x:Key="Storyboard1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Probagomb">
                 <EasingDoubleKeyFrame KeyTime="0" Value="32"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="34"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="28"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.883" Value="76"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.75" Value="36"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Probagomb">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-598"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-808"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.883" Value="4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.75" Value="-802"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
@@ -23,7 +27,7 @@
             <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
         </EventTrigger>
     </Window.Triggers>
-    <Canvas x:Name="Cv" KeyDown="Cv_KeyDown" RenderTransformOrigin="0.552,0.577">
+    <Canvas x:Name="Cv"  RenderTransformOrigin="0.552,0.577">
         <Canvas.Background>
             <LinearGradientBrush EndPoint="0,4" StartPoint="0,0">
                 <LinearGradientBrush.Transform>
@@ -53,9 +57,7 @@
         <Image x:Name="imageground" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="480" Source="ground.jpg" Canvas.Left="10" Canvas.Top="405"/>
 
         <!--<TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>-->
-
-        <Button x:Name="buttonMehet" Content="Mehet" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="161"  Canvas.Left="20" Canvas.Top="548"/>
-        <Button x:Name="Probagomb" Content = "Proba" Height="21" VerticalAlignment="Top" Width = "111" Canvas.Left ="619" Canvas.Top="300" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="Probagomb" Content = "Proba" Height="21" VerticalAlignment="Top" Width = "111" Canvas.Left ="643" Canvas.Top="300" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

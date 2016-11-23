@@ -20,7 +20,12 @@ namespace kpollo
             name = _name;
             pass = _pass;
         }
-
+        public User()
+        {
+            name = "teszt";
+            pass = "123";
+            score = 5;
+        }
         public string Pass
         {
             get

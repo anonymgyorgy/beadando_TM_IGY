@@ -132,5 +132,7 @@ namespace kpollo
                 Canvas.SetLeft(image, xbeka);
             }
         }
+
+       
     }
 }
