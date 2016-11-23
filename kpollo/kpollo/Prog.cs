@@ -17,12 +17,14 @@ namespace kpollo
 
         public void Beolvas()
         {
-            
-            FileStream fs = new FileStream("userialization.xml", FileMode.Open);
+/*
+            StreamReader be = new StreamReader("userialization.xml");
             XmlSerializer xs = new XmlSerializer(typeof(User));
-            List<User> deser = (List<User>)xs.Deserialize(fs);
 
+            User u = (User)xs.Deserialize(be);
 
+          
+            /*
 
             /*StreamReader be = new StreamReader("users.txt", Encoding.UTF7);
             while (!be.EndOfStream)
