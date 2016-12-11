@@ -40,11 +40,17 @@
         </Canvas.Background>
 
         <TextBlock x:Name="ora" HorizontalAlignment="Left" Height="56" Margin="600,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="{Binding Sec}"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="135" Source="beka.jpg" Canvas.Left="86" Canvas.Top="300"/>
+
 
         <!--<TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>-->
         <Button x:Name="buttonVege" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="buttonVege_Click" Canvas.Left="726" Canvas.Top="552"/>
         <Canvas x:Name="enemy" Height="106" Canvas.Left="548" Canvas.Top="293" Width="180" Background="Black"/>
+        <Label x:Name="label_frog_left_value" Content="Label" Canvas.Left="298" Canvas.Top="75"/>
+        <Label x:Name="label_enemy_righ_vule" Content="Label" Canvas.Left="298" Canvas.Top="135"/>
+        <Canvas x:Name="Canvas_frog" Height="100" Canvas.Left="127" Canvas.Top="299" Width="100">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="90" Source="beka.jpg" Canvas.Top="10" RenderTransformOrigin="0.383,0.118"/>
+        </Canvas>
+        <Label x:Name="label_collusion" Content="Label" Canvas.Left="463" Canvas.Top="135"/>
 
 
     </Canvas>

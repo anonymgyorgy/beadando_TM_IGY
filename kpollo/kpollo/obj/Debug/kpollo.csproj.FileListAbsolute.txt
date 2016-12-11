@@ -59,3 +59,21 @@ C:\Users\Napocska\Desktop\beadando_jatek\beadando_TM_IGY\kpollo\kpollo\obj\Debug
 C:\Users\Napocska\Desktop\beadando_jatek\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.g.resources
 C:\Users\Napocska\Desktop\beadando_jatek\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.Properties.Resources.resources
 C:\Users\Napocska\Desktop\beadando_jatek\beadando_TM_IGY\kpollo\kpollo\obj\Debug\kpollo.csproj.GenerateResource.Cache
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\bin\Debug\kpollo.exe.config
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo.exe
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo.pdb
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\bin\Debug\kpollo.exe
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\bin\Debug\kpollo.pdb
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo.csprojResolveAssemblyReference.cache
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\MainWindow.g.cs
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\Pass.g.cs
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\Toplista.g.cs
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\App.g.cs
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo_MarkupCompile.cache
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo_MarkupCompile.lref
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\MainWindow.baml
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\Pass.baml
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\Toplista.baml
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo.g.resources
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo.Properties.Resources.resources
+C:\Users\Natran Albin\Desktop\kpollo\kpollo\kpollo\obj\Debug\kpollo.csproj.GenerateResource.Cache

@@ -65,20 +65,37 @@ namespace kpollo
         {
             Sec++;
 
-           
-           
+            label_frog_left_value.Content = Canvas.GetLeft(Canvas_frog) + Canvas_frog.Width;
+            label_enemy_righ_vule.Content = Canvas.GetLeft(enemy);
 
+            
+
+            //itt vizsgálja, hogy elérte-e
+            if (Canvas.GetLeft(Canvas_frog)+Canvas_frog.Width >= Canvas.GetLeft(enemy) &&
+               !(Canvas.GetTop(Canvas_frog) + Canvas_frog.Height <= Canvas.GetTop(enemy)) &&
+               (Canvas.GetTop(Canvas_frog)  <= Canvas.GetTop(enemy)+enemy.Height) &&
+               !(Canvas.GetLeft(Canvas_frog) >= Canvas.GetLeft(enemy)+enemy.Width)
+
+
+               )                
+            {               
+
+                label_collusion.Content = "True";
+            }
+
+            else
+            {
+                label_collusion.Content = "False";
+                // MessageBox.Show("Elérte", "Help");
+            }
 
 
 
 
             Canvas.SetLeft(enemy, xenemy);
-            xenemy -= 10;
+           // xenemy -= 10;
 
-            foreach (UIElement image in enemy.Children)
-            {
-                MessageBox.Show("hello");
-            }
+      
           
 
 
@@ -97,27 +114,29 @@ namespace kpollo
 
         private void Cv_KeyDown(object sender, KeyEventArgs e)
         {
+           
+
             if (e.Key == Key.Left && xbeka>1)
             {
                 xbeka -= 10;
-                Canvas.SetLeft(image, xbeka);
+                Canvas.SetLeft(Canvas_frog, xbeka);
             }
             if (e.Key == Key.Down)
             {
                 ybeka += 10;
-                Canvas.SetTop(image, ybeka);
+                Canvas.SetTop(Canvas_frog, ybeka);
             }
             if (e.Key == Key.Up)
             {
                 ybeka -= 10;
-                Canvas.SetTop(image, ybeka);
+                Canvas.SetTop(Canvas_frog, ybeka);
 
             }
            
             if (e.Key == Key.Right && xbeka < 700)
             {
                 xbeka += 10;
-                Canvas.SetLeft(image, xbeka);
+                Canvas.SetLeft(Canvas_frog, xbeka);
             }
         }
 
