@@ -4,10 +4,4 @@
   <Pass>Jelszó</Pass>
   <Name>Név</Name>
   <Score>0</Score>
-</User><?xml version="1.0"?>
-<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <score>7</score>
-  <Pass>Jelszó</Pass>
-  <Name>rebeka</Name>
-  <Score>7</Score>
 </User>

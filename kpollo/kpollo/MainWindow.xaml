@@ -7,20 +7,7 @@
         mc:Ignorable="d"
         Title="Game" Height="650" Width="900" KeyDown="Cv_KeyDown">
     <Window.Resources>
-        <Storyboard x:Key="Storyboard1">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Probagomb">
-                <EasingDoubleKeyFrame KeyTime="0" Value="32"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="28"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.883" Value="76"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.75" Value="36"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Probagomb">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-808"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.883" Value="4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.75" Value="-802"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
+        <Storyboard x:Key="Storyboard1"/>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -54,20 +41,10 @@
 
         <TextBlock x:Name="ora" HorizontalAlignment="Left" Height="56" Margin="600,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="{Binding Sec}"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="135" Source="beka.jpg" Canvas.Left="86" Canvas.Top="300"/>
-        <Image x:Name="imageground" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="480" Source="ground.jpg" Canvas.Left="10" Canvas.Top="405"/>
 
         <!--<TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>-->
-        <Button x:Name="Probagomb" Content = "Proba" Height="21" VerticalAlignment="Top" Width = "111" Canvas.Left ="643" Canvas.Top="300" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
         <Button x:Name="buttonVege" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="buttonVege_Click" Canvas.Left="726" Canvas.Top="552"/>
+        <Canvas x:Name="enemy" Height="106" Canvas.Left="548" Canvas.Top="293" Width="180" Background="Black"/>
 
 
     </Canvas>

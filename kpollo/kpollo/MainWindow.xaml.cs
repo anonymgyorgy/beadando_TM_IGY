@@ -27,38 +27,24 @@ namespace kpollo
         
         public MainWindow()
         {
-            DispatcherTimer g;
-            g = new DispatcherTimer();
-            g.Interval = new TimeSpan(0, 0, 1);
-            g.Tick += g_Tick;
-            g.Start();
+            
             DispatcherTimer t;
             t = new DispatcherTimer();
-            t.Interval = new TimeSpan(0, 0, 0, 0, 50);
+            t.Interval = new TimeSpan(0, 0, 0, 1);
             t.Tick += t_Tick;
             t.Start();
             InitializeComponent();
             //this.DataContext = this;
             this.ora.DataContext = this;
-            Canvas.SetBottom(imageground, 1); 
+            
         }
-        int millisec=0;
+       
         int sec = 0;
         
         int ybeka=300;
         int xbeka = 100;
-        public int Millisec
-        {
-            get { return millisec; }
-            set
-            {
-                millisec = value;
-                var pc = PropertyChanged;
-                if (pc != null)
-                    pc(this, new PropertyChangedEventArgs("Millisec"));
-                
-            }
-        }
+       
+       
         public int Sec
         {
             get { return sec; }
@@ -72,22 +58,30 @@ namespace kpollo
             }
         }
 
-        
 
+        int xenemy = 300;
+      
         private void t_Tick(object sender, EventArgs e)
         {
-            Millisec++;
-            if (ybeka < 350)
-            {
-                ybeka = ybeka + 10;
-                Canvas.SetTop(image, ybeka);
-                           
-            }
-            
-        }
-        private void g_Tick(object sender, EventArgs e)
-        {
             Sec++;
+
+           
+           
+
+
+
+
+
+            Canvas.SetLeft(enemy, xenemy);
+            xenemy -= 10;
+
+            foreach (UIElement image in enemy.Children)
+            {
+                MessageBox.Show("hello");
+            }
+          
+
+
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -99,7 +93,7 @@ namespace kpollo
         }
        
 
-        bool jump = false;
+        
 
         private void Cv_KeyDown(object sender, KeyEventArgs e)
         {
@@ -110,19 +104,13 @@ namespace kpollo
             }
             if (e.Key == Key.Down)
             {
-                //ybeka += 10;
+                ybeka += 10;
                 Canvas.SetTop(image, ybeka);
             }
             if (e.Key == Key.Up)
             {
-                while(!jump && ybeka>=350)
-                {
-                    SystemSounds.Asterisk.Play();
-                    jump = true;
-                    ybeka -= 200;
-                    Canvas.SetTop(image, ybeka);
-                }
-                jump = false;
+                ybeka -= 10;
+                Canvas.SetTop(image, ybeka);
 
             }
            
