@@ -33,8 +33,8 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </LinearGradientBrush.RelativeTransform>
-                <GradientStop Color="White"/>
-                <GradientStop Color="#1111A700" Offset="0.5"/>
+                <GradientStop Color="White" Offset="0.506"/>
+                <GradientStop Color="Gray" Offset="0.5"/>
             </LinearGradientBrush>
 
         </Canvas.Background>
@@ -43,14 +43,20 @@
 
 
         <!--<TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>-->
-        <Button x:Name="buttonVege" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="buttonVege_Click" Canvas.Left="726" Canvas.Top="552"/>
-        <Canvas x:Name="enemy" Height="106" Canvas.Left="548" Canvas.Top="293" Width="180" Background="Black"/>
-        <Label x:Name="label_frog_left_value" Content="Label" Canvas.Left="298" Canvas.Top="75"/>
-        <Label x:Name="label_enemy_righ_vule" Content="Label" Canvas.Left="298" Canvas.Top="135"/>
-        <Canvas x:Name="Canvas_frog" Height="100" Canvas.Left="127" Canvas.Top="299" Width="100">
-            <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="90" Source="beka.jpg" Canvas.Top="10" RenderTransformOrigin="0.383,0.118"/>
+        <Button x:Name="buttonVege" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="buttonVege_Click" Canvas.Left="744"/>
+        <Canvas x:Name="enemy" Height="106" Canvas.Left="548" Canvas.Top="293" Width="180">
+            <Canvas.Background>
+                <ImageBrush ImageSource="Car.png"/>
+            </Canvas.Background>
         </Canvas>
-        <Label x:Name="label_collusion" Content="Label" Canvas.Left="463" Canvas.Top="135"/>
+        <Label x:Name="label_frog_left_value" Content="Label" Canvas.Left="668" Canvas.Top="33"/>
+        <Label x:Name="label_enemy_righ_vule" Content="Label" Canvas.Left="466" Canvas.Top="25"/>
+        <Canvas x:Name="Canvas_frog" Height="100" Canvas.Left="93" Canvas.Top="157" Width="100">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="90" Source="beka.jpg" Canvas.Top="8" RenderTransformOrigin="0.383,0.118" Canvas.Left="8"/>
+        </Canvas>
+        <Label x:Name="label_collusion" Content="Label" Canvas.Left="573" Canvas.Top="31" RenderTransformOrigin="0.605,0.538"/>
+        <Rectangle Fill="#FFF4F4F5" Height="24" Stroke="Black" Canvas.Top="563" Width="924"/>
+        <Rectangle Fill="#FFF4F4F5" Height="24" Stroke="Black" Canvas.Top="77" Width="924" Canvas.Left="-6"/>
 
 
     </Canvas>

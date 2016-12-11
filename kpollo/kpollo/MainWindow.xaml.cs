@@ -24,13 +24,13 @@ namespace kpollo
     /// </summary>
     public partial class MainWindow : Window , INotifyPropertyChanged
     {
-        
+        DispatcherTimer t;
         public MainWindow()
         {
             
-            DispatcherTimer t;
+            
             t = new DispatcherTimer();
-            t.Interval = new TimeSpan(0, 0, 0, 1);
+            t.Interval = new TimeSpan(0, 0, 0, 0,100);
             t.Tick += t_Tick;
             t.Start();
             InitializeComponent();
@@ -58,9 +58,9 @@ namespace kpollo
             }
         }
 
-
-        int xenemy = 300;
-      
+        int xenemy;
+        
+        int move = 2;
         private void t_Tick(object sender, EventArgs e)
         {
             Sec++;
@@ -75,27 +75,32 @@ namespace kpollo
                !(Canvas.GetTop(Canvas_frog) + Canvas_frog.Height <= Canvas.GetTop(enemy)) &&
                (Canvas.GetTop(Canvas_frog)  <= Canvas.GetTop(enemy)+enemy.Height) &&
                !(Canvas.GetLeft(Canvas_frog) >= Canvas.GetLeft(enemy)+enemy.Width)
-
-
                )                
             {               
 
                 label_collusion.Content = "True";
+                move = 0;
+                t.Stop();
             }
-
             else
             {
                 label_collusion.Content = "False";
                 // MessageBox.Show("Elérte", "Help");
             }
 
-
-
-
             Canvas.SetLeft(enemy, xenemy);
-           // xenemy -= 10;
+            xenemy -= move;
 
-      
+      if(Canvas.GetLeft(enemy)<0-enemy.Width)
+            {
+                xenemy = 900;
+                
+                move+=2;
+                Random r = new Random();
+                Canvas.SetTop(enemy, r.Next(100,460));
+
+                
+            }
           
 
 
@@ -118,24 +123,24 @@ namespace kpollo
 
             if (e.Key == Key.Left && xbeka>1)
             {
-                xbeka -= 10;
+                xbeka -= move;
                 Canvas.SetLeft(Canvas_frog, xbeka);
             }
             if (e.Key == Key.Down)
             {
-                ybeka += 10;
+                ybeka += move;
                 Canvas.SetTop(Canvas_frog, ybeka);
             }
             if (e.Key == Key.Up)
             {
-                ybeka -= 10;
+                ybeka -= move;
                 Canvas.SetTop(Canvas_frog, ybeka);
 
             }
            
             if (e.Key == Key.Right && xbeka < 700)
             {
-                xbeka += 10;
+                xbeka += move;
                 Canvas.SetLeft(Canvas_frog, xbeka);
             }
         }
