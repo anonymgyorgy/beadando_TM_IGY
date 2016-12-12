@@ -1,13 +1,7 @@
 <?xml version="1.0"?>
 <User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <score>0</score>
+  <score>1342</score>
   <Pass>Jelszó</Pass>
   <Name>Név</Name>
-  <Score>0</Score>
-</User><?xml version="1.0"?>
-<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <score>1</score>
-  <Pass>Jelszó</Pass>
-  <Name>Né</Name>
-  <Score>1</Score>
+  <Score>1342</Score>
 </User>

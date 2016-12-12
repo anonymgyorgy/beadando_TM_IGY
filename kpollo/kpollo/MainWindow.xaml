@@ -60,6 +60,11 @@
             <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="beka.png" RenderTransformOrigin="0.383,0.118" Stretch="Fill"/>
         </Canvas>
         <Label x:Name="label_collusion" Content="Label" Canvas.Left="576" Canvas.Top="-47" RenderTransformOrigin="0.605,0.538"/>
+        <Canvas x:Name="enemy2" Height="124" Canvas.Left="900" Canvas.Top="136" Width="215">
+            <Canvas.Background>
+                <ImageBrush ImageSource="Car2.png"/>
+            </Canvas.Background>
+        </Canvas>
 
 
     </Canvas>

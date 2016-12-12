@@ -15,3 +15,4 @@ C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.g.resour
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.Properties.Resources.resources
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.exe
 C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.pdb
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.csprojResolveAssemblyReference.cache

@@ -28,7 +28,6 @@ namespace kpollo
         public MainWindow()
         {
             
-            
             t = new DispatcherTimer();
             t.Interval = new TimeSpan(0, 0, 0, 0,100);
             t.Tick += t_Tick;
@@ -40,10 +39,11 @@ namespace kpollo
         }
        
         int sec = 0;
-        
+        int xenemy=900;
         int ybeka;
         int xbeka;
-       
+        int move = 3;
+        int xenemy2=900;
        
         public int Sec
         {
@@ -58,41 +58,43 @@ namespace kpollo
             }
         }
 
-        int xenemy;
+     
         
-        int move = 2;
+      
         private void t_Tick(object sender, EventArgs e)
         {
             Sec++;
 
             label_frog_left_value.Content = Canvas.GetLeft(Canvas_frog) + Canvas_frog.Width;
             label_enemy_righ_vule.Content = Canvas.GetLeft(enemy);
-
-            
-
             //itt vizsgálja, hogy elérte-e
-            if (Canvas.GetLeft(Canvas_frog)+Canvas_frog.Width >= Canvas.GetLeft(enemy) &&
+            if ((Canvas.GetLeft(Canvas_frog)+Canvas_frog.Width >= Canvas.GetLeft(enemy) &&
                !(Canvas.GetTop(Canvas_frog) + Canvas_frog.Height <= Canvas.GetTop(enemy)) &&
                (Canvas.GetTop(Canvas_frog)  <= Canvas.GetTop(enemy)+enemy.Height) &&
-               !(Canvas.GetLeft(Canvas_frog) >= Canvas.GetLeft(enemy)+enemy.Width)
-               )                
-            {               
+               !(Canvas.GetLeft(Canvas_frog) >= Canvas.GetLeft(enemy)+enemy.Width))||
+               (Canvas.GetLeft(Canvas_frog) + Canvas_frog.Width >= Canvas.GetLeft(enemy2) &&
+               !(Canvas.GetTop(Canvas_frog) + Canvas_frog.Height <= Canvas.GetTop(enemy2)) &&
+               (Canvas.GetTop(Canvas_frog) <= Canvas.GetTop(enemy2) + enemy2.Height) &&
+               !(Canvas.GetLeft(Canvas_frog) >= Canvas.GetLeft(enemy2) + enemy2.Width))
+               )
 
-                label_collusion.Content = "True";
+            {   label_collusion.Content = "True";
                 move = 0;
-                t.Stop();
-               
+                t.Stop();               
             }
             else
             {
                 label_collusion.Content = "False";
-                // MessageBox.Show("Elérte", "Help");
             }
-
             Canvas.SetLeft(enemy, xenemy);
             xenemy -= move;
 
-      if(Canvas.GetLeft(enemy)<0-enemy.Width)
+            if (Sec> 100)
+            {
+                Canvas.SetLeft(enemy2, xenemy2);
+                xenemy2 -= move;
+            }
+            if (Canvas.GetLeft(enemy)<0-enemy.Width)
             {
                 xenemy = 900;
                 
@@ -100,6 +102,14 @@ namespace kpollo
                 Random r = new Random();
                 Canvas.SetTop(enemy, r.Next(100,460));                
             }
+            if (Canvas.GetLeft(enemy2) < 0 - enemy2.Width)
+            {
+                xenemy2 = 900;
+               
+                Random r = new Random();
+                Canvas.SetTop(enemy2, r.Next(100, 460));
+            }
+
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
