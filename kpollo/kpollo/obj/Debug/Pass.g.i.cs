@@ -100,7 +100,7 @@ namespace kpollo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/kpollo;component/pass.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Frog;component/pass.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\Pass.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

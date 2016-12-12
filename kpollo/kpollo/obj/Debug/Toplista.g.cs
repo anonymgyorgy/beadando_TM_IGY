@@ -68,7 +68,7 @@ namespace kpollo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/kpollo;component/toplista.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Frog;component/toplista.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\Toplista.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

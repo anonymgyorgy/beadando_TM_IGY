@@ -41,8 +41,8 @@ namespace kpollo
        
         int sec = 0;
         
-        int ybeka=300;
-        int xbeka = 100;
+        int ybeka;
+        int xbeka;
        
        
         public int Sec
@@ -81,6 +81,7 @@ namespace kpollo
                 label_collusion.Content = "True";
                 move = 0;
                 t.Stop();
+               
             }
             else
             {
@@ -97,13 +98,8 @@ namespace kpollo
                 
                 move+=2;
                 Random r = new Random();
-                Canvas.SetTop(enemy, r.Next(100,460));
-
-                
+                Canvas.SetTop(enemy, r.Next(100,460));                
             }
-          
-
-
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

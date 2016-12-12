@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kpollo"
         mc:Ignorable="d"
-        Title="Game" Height="650" Width="900" KeyDown="Cv_KeyDown">
+        Title="Game" Height="650" Width="900" KeyDown="Cv_KeyDown" Background="#FF00FFDC">
     <Window.Resources>
         <Storyboard x:Key="Storyboard1"/>
     </Window.Resources>
@@ -14,7 +14,7 @@
             <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
         </EventTrigger>
     </Window.Triggers>
-    <Canvas x:Name="Cv"  RenderTransformOrigin="0.552,0.577">
+    <Canvas x:Name="Cv"  RenderTransformOrigin="0.552,0.577" Margin="0,62,0,0">
         <Canvas.Background>
             <LinearGradientBrush EndPoint="0,4" StartPoint="0,0">
                 <LinearGradientBrush.Transform>
@@ -39,24 +39,27 @@
 
         </Canvas.Background>
 
+        <Rectangle Fill="#FFF4F4F5" Height="24" Stroke="Black" Canvas.Top="506" Width="905" Canvas.Left="-9"/>
+
+
+        <Rectangle Fill="#FFF4F4F5" Height="24" Stroke="Black" Canvas.Top="77" Width="898" Canvas.Left="-2"/>
+
         <TextBlock x:Name="ora" HorizontalAlignment="Left" Height="56" Margin="600,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="{Binding Sec}"/>
 
 
         <!--<TextBlock x:Name="textBlock" Height="50" Canvas.Left="0" TextWrapping="Wrap" Canvas.Top="500" Width="984" Background="#FFFFA200"/>-->
-        <Button x:Name="buttonVege" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="buttonVege_Click" Canvas.Left="744"/>
+        <Button x:Name="buttonVege" Content="Vége" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="150" Click="buttonVege_Click" Canvas.Left="738" Canvas.Top="-69"/>
         <Canvas x:Name="enemy" Height="106" Canvas.Left="548" Canvas.Top="293" Width="180">
             <Canvas.Background>
                 <ImageBrush ImageSource="Car.png"/>
             </Canvas.Background>
         </Canvas>
-        <Label x:Name="label_frog_left_value" Content="Label" Canvas.Left="668" Canvas.Top="33"/>
-        <Label x:Name="label_enemy_righ_vule" Content="Label" Canvas.Left="466" Canvas.Top="25"/>
-        <Canvas x:Name="Canvas_frog" Height="100" Canvas.Left="93" Canvas.Top="157" Width="100">
-            <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="90" Source="beka.jpg" Canvas.Top="8" RenderTransformOrigin="0.383,0.118" Canvas.Left="8"/>
+        <Label x:Name="label_frog_left_value" Content="Label" Canvas.Left="668" Canvas.Top="-45"/>
+        <Label x:Name="label_enemy_righ_vule" Content="Label" Canvas.Left="487" Canvas.Top="-47"/>
+        <Canvas x:Name="Canvas_frog" Height="88" Canvas.Left="2" Canvas.Top="2" Width="100">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="beka.png" RenderTransformOrigin="0.383,0.118" Stretch="Fill"/>
         </Canvas>
-        <Label x:Name="label_collusion" Content="Label" Canvas.Left="573" Canvas.Top="31" RenderTransformOrigin="0.605,0.538"/>
-        <Rectangle Fill="#FFF4F4F5" Height="24" Stroke="Black" Canvas.Top="563" Width="924"/>
-        <Rectangle Fill="#FFF4F4F5" Height="24" Stroke="Black" Canvas.Top="77" Width="924" Canvas.Left="-6"/>
+        <Label x:Name="label_collusion" Content="Label" Canvas.Left="576" Canvas.Top="-47" RenderTransformOrigin="0.605,0.538"/>
 
 
     </Canvas>

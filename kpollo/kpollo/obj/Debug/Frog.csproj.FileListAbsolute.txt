@@ -1,0 +1,17 @@
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\MainWindow.g.cs
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Pass.g.cs
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Toplista.g.cs
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\App.g.cs
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\MainWindow.baml
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Pass.baml
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Toplista.baml
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.csproj.GenerateResource.Cache
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\bin\Debug\Frog.exe.config
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\bin\Debug\Frog.exe
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\bin\Debug\Frog.pdb
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog_MarkupCompile.cache
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog_MarkupCompile.lref
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.g.resources
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.Properties.Resources.resources
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.exe
+C:\Users\tothm\Desktop\GIT\beadando_TM_IGY\kpollo\kpollo\obj\Debug\Frog.pdb

@@ -7,8 +7,8 @@
     <ProjectGuid>{9905669C-B7DE-4BFB-9911-2754ADFE59DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>kpollo</RootNamespace>
-    <AssemblyName>kpollo</AssemblyName>
+    <RootNamespace>Frog</RootNamespace>
+    <AssemblyName>Frog</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -113,10 +113,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="beka.jpg" />
+    <Resource Include="Car.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Car.png" />
+    <Resource Include="beka.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
